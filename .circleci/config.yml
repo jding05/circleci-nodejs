@@ -12,13 +12,11 @@ jobs:
     steps:
       - checkout
       - run:
-        name: install the npm package
-        command: npm install
+          name: install the npm package
+          command: npm install
       - run:
-          #Add command name and bash commands to execute
-        name: Build the project 
-        command: npm build
+          name: Build the project 
+          command: npm build
       - run:
-    #Add command name and bash commands to execute
-        name: Run test
-        command: npm test
+          name: Run test
+          command: npm test
